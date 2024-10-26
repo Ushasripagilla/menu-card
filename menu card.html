@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Restaurant Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Escap zone Restaurant</h1>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="https://www.awesomecuisine.com/wp-content/uploads/2007/10/Chicken-Biryani_resized-500x436.jpg" alt="Dish Image">
+            <div class="Chicken-Biryani">
+                <h3>telangana special Biryani</h3>
+                <p>A classic hyderabad biryani dish with rich, meaty sauce.</p>
+                <p class="price">$27.99</p>
+                <button class="order-btn" onclick="addToCart('chiken Biryani')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i0.wp.com/passionateaboutbaking.com/foodpicturesPAB/2023/11/Black-Forest-Dessert-Cup-1000.jpg?resize=525%2C525&ssl=1.jpg" alt="Dish Image">
+            <div class="best desserts">
+                <h3>tasty sweet desserts </h3>
+                <p>cool and sweet desserts for who loves more sweets .</p>
+                <p class="price">$50.99</p>
+                <button class="order-btn" onclick="addToCart('desserts')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://sitarafoods.com/wp-content/uploads/2022/07/image-Non_Veg_Pickles_Combo_Pack_3-1590847901807-1.jpg" alt="Dish Image">
+            <div class="non veg pickles">
+                <h3>all types non veg pickles</h3>
+                <p>very tasty pickles for telugu states.</p>
+                <p class="price">$80.99</p>
+                <button class="order-btn" onclick="addToCart('non veg pickles')">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart" class="cart">
+        <h2>Your Order</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>
